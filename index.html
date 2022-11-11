@@ -1,9 +1,30 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mehran</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <title>Document</title>
+  </head>
+  <pre>
+    <code class="language-ruby code-block-def">
+class Thing
+    name: "unknown"
+
+class Person extends Thing
+    say_name: => print "Hello, I am #{@name}!"
+
+with Person!
+    .name = "MoonScript"
+    \say_name!
+    </code>
+  </pre>
+
+  <body>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>
